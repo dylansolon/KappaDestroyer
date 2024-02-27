@@ -1,0 +1,95 @@
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    background-image: url("img/back8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#kappa {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+#level0 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+#level0 img {
+    width: 10rem;
+	height: 10rem;
+}
+
+.bullet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    animation: shootBullet 4s forwards;
+}
+
+.score-text {
+    position: absolute;
+    top: 2rem;
+    right: 10px;
+    color: rgb(43, 255, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.leveldisplay {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: rgb(43, 255, 0);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@keyframes shootBullet {
+    0% {
+        transform: translate(0, -50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(100vw, -50%);
+        opacity: 5;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
