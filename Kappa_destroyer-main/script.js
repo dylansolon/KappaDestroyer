@@ -36,7 +36,7 @@ let player = {
         return this.codaPoint;
     },
 	setKappa: function (playerKappa) {
-        this.src = `./img/kappa_level${this.level.current}.png`;
+        this.src = `assets/img/kappa_level${this.level.current}.png`;
 		playerKappa.removeAttribute("src");
 		playerKappa.setAttribute("src", this.src);
 	},
@@ -54,7 +54,7 @@ let opponent = {
     vitesse: 5,
     src: "",
     setOpponent: function () {
-        this.src = `./img/code_level${player.level.current}.png`;
+        this.src = `assets/img/code_level${player.level.current}.png`;
 		boss1Img.removeAttribute("src");
 		boss1Img.setAttribute("src", this.src);
     },
