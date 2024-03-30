@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GAME JAM</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <p class="score-text">Vous êtes au niveau : <span id="level"></span> / 7</p>
+    <p class="leveldisplay">Vous avez : <span id="score"></span> Coda_ points</p>
+    <img id="kappa" src="kappa.png" />
+    <div id="level0"><img src="assets/img/code_level0.png" id="boss1" /></div>
+
+    <audio id="shootSound" src="assets/mp3/shoot.mp3"></audio>
+    <audio id="deathSound" src="assets/mp3/death_sound.mp3"></audio>
+    <script src="assets/script.js"></script>
+
+    <div id="deathModal" class="modal">
+      <div class="modal-content">
+        <p>You died! Click OK to restart</p>
+        <button id="restartButton">OK</button>
+      </div>
+    </div>
+  </body>
+</html>
