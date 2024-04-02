@@ -6,7 +6,7 @@
 }
 body {
     margin: 0;
-    background-image: url("assets/img/kappa.webp");
+    background-image: url("img/kappa.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
